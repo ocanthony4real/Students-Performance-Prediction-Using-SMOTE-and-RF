@@ -12,3 +12,6 @@ matplotlib
 imblearn
 scikit-learn
 seaborn
+pandas
+numpy
+pickle
