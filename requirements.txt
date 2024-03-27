@@ -1,5 +1,5 @@
 altair==5.2.0
-apturl==0.5.2
+apturl
 arrow==1.2.1
 attrs==23.2.0
 beautifulsoup4==4.10.0
