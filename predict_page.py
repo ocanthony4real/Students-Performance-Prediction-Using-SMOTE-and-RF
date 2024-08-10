@@ -40,6 +40,7 @@ conditions = [
 
 choices = [0, 1, 2, 3]
 
+# df_new['1st sem Grade remark'] = np.select(conditions, choices, default='null')
 df_new['1st sem Grade remark'] = np.select(conditions, choices, default='null')
 
 df_new['1st sem Grade remark'] = df_new['1st sem Grade remark'].astype(int)
