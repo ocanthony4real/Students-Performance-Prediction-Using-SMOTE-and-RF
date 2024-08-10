@@ -44,7 +44,9 @@ conditions = [
 
 choices = [0, 1, 2, 3]
 
-df_new['1st sem Grade remark'] = np.select(conditions, choices, default='null')
+df_new['1st sem Grade remark'] = np.select(conditions, choices)
+
+#df_new['1st sem Grade remark'] = np.select(conditions, choices, default='null')
 
 df_new['1st sem Grade remark'] = df_new['1st sem Grade remark'].astype(int)
 df_new = df_new.drop(axis=1, columns=['Curricular units 2nd sem (grade)','Curricular units 1st sem (grade)'])
@@ -158,7 +160,7 @@ def load_data():
 
     choices = [0, 1, 2, 3]
 
-    df_new['1st sem Grade remark'] = np.select(conditions, choices, default='null')
+    df_new['1st sem Grade remark'] = np.select(conditions, choices)
 
     df_new['1st sem Grade remark'] = df_new['1st sem Grade remark'].astype(int)
 
